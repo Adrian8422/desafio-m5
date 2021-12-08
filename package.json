@@ -1,0 +1,13 @@
+{
+  "name": "practicando-desafio-m5",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html --port 8080",
+    "build": "parcel build ./src/index.html --dist-dir build",
+    "deploy": "gh-pages -d dist"
+  }
+}

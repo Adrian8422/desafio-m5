@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./assets/neon-img.jpg");
+}
+.welcome-page {
+  height: 672px;
+  text-align: center;
+  padding: 12px 4px 12px 4px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container-title-button {
+  display: grid;
+  gap: 43px;
+  margin: 25px 0 15px 0;
+  width: 100%;
+}
+.container-hands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0px;
+  margin: 0 auto;
+  bottom: 0px;
+  max-width: 441px;
+}
+
+/* CONTINUAR CON PROXIMA PAGE */
+
+/* PAGE INSTRUCTIONS */
+
+.instructions-page {
+  height: 672px;
+  text-align: center;
+  padding: 12px 4px 12px 4px;
+  margin: 0 auto;
+  width: 100%;
+}
+.parrafo-instruc {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* PAGE GAME */
+
+.container-page-game {
+  height: 672px;
+  display: flex;
+
+  justify-content: center;
+}
+.container-page__counter {
+  margin: 95px 0 0 0;
+}
+
+/* IN GAME PAGE */
+
+.container-in-game {
+  height: 672px;
+  padding: 12px 4px 12px 4px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot-selection {
+  transform: rotate(170deg);
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+
+  animation: animate 1s;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-200%, -50%);
+  }
+}
+
+.my-selection {
+  transform: rotate(10deg);
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+
+  animation: my-animate 1s;
+}
+@keyframes my-animate {
+  0% {
+    transform: translate(200%, 50%);
+  }
+}
+/* WINNER PAGE */
+
+.img-el {
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  border: solid 5px black;
+}
+.winner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #102626 transparent 90%;
+  height: 700px;
+}
+
+/* LOSE PAGE */
+
+.lose-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  height: 700px;
+}
