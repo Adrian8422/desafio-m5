@@ -2,10 +2,12 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
   background-image: url("./assets/neon-img.jpg");
 }
+
 .welcome-page {
-  height: 672px;
+  height: 697px;
   text-align: center;
   padding: 12px 4px 12px 4px;
   margin: 0 auto;
@@ -35,7 +37,7 @@ body {
 /* PAGE INSTRUCTIONS */
 
 .instructions-page {
-  height: 672px;
+  height: 697px;
   text-align: center;
   padding: 12px 4px 12px 4px;
   margin: 0 auto;
@@ -49,7 +51,7 @@ body {
 /* PAGE GAME */
 
 .container-page-game {
-  height: 672px;
+  height: 697px;
   display: flex;
 
   justify-content: center;
@@ -61,12 +63,13 @@ body {
 /* IN GAME PAGE */
 
 .container-in-game {
-  height: 672px;
+  height: 670px;
   padding: 12px 4px 12px 4px;
   margin: 0 auto;
   width: 100%;
   display: grid;
-  align-items: center;
+  gap: 50%;
+  align-items: self-end;
   justify-content: center;
 }
 
@@ -114,7 +117,7 @@ body {
   justify-content: space-evenly;
   margin: 0 auto;
   background-color: #102626 transparent 90%;
-  height: 700px;
+  height: 697px;
 }
 
 /* LOSE PAGE */
@@ -126,5 +129,5 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
-  height: 700px;
+  height: 697px;
 }

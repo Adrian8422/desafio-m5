@@ -1,14 +1,16 @@
 import { state } from "../../state";
 
-const currentPlays = state.getState().currentGame;
-
 export function initInGamePage(params) {
   const div = document.createElement("div");
   div.innerHTML = `
 
   <div class="container-in-game">
-    <play-hands class="bot-selection" in-game="true" jugada="${currentPlays.computerPlay}"></play-hands>
-    <play-hands class="my-selection" in-game="true" jugada="${currentPlays.myPlay}"></play-hands>
+    <play-hands class="bot-selection" in-game="true" jugada="${
+      state.getState().currentGame.computerPlay
+    }"></play-hands>
+    <play-hands class="my-selection" in-game="true" jugada="${
+      state.getState().currentGame.myPlay
+    }"></play-hands>
   </div> 
   `;
 
